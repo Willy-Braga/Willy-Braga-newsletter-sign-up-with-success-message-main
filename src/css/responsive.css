@@ -1,0 +1,55 @@
+@media (max-width: 768px ) {
+    .container{
+        width: 730px;
+    }
+}
+
+@media (max-width: 430px ){
+    .container{
+        width: 100%;
+        flex-direction: column-reverse;
+        height: 100%;
+        padding: 0px;
+    }
+
+    .left-container{
+        width: 100%;
+    }
+
+    .title-container{
+        gap: 10px;
+    }
+
+    .title-container .title{
+        font-size: 38px;
+    }
+
+    .title-container .description{
+        text-align: start;
+    }
+
+    .list-container{
+        gap: 10px;
+    }
+
+    .right-container{
+        background-image: url(/src/images/illustration-sign-up-mobile.svg);
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .right-container .img-container{
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .title-container .title {
+        font-size: 32px;
+    }
+
+    .list-item .description {
+        font-size: 13px;
+    }
+}
