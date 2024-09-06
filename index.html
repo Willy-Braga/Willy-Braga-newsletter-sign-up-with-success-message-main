@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Willy Braga">
-    <title>Document</title>
+    
+    <title>Newsletter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/variables.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/responsive.css">
 </head>
 <body>
-    
+    <section class="container">
+        <div class="left-container">
+            <div class="title-container">
+                <h1 class="title">Stay updated!</h1>
+                <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
+            </div>
+
+            <ul class="list-container">
+                <li class="list-item">
+                    <img src="src/images/icon-list.svg" alt="">
+                    <p>Product discovery and building what matters</p>
+                </li>
+                <li class="list-item">
+                    <img src="src/images/icon-list.svg" alt="">
+                    <p>Measuring to ensure updates are a success</p>
+                </li>
+                <li class="list-item">
+                    <img src="src/images/icon-list.svg" alt="">
+                    <p>And much more!</p>
+                </li>
+            </ul>
+
+            <form action="#" method="post" class="form">
+                <p class="title-form">Email address:</p>
+                <input type="email" name="email" placeholder="email@company.com" required>
+                <button type="submit" class="btn">Subscribe to monthly newsletter</button>
+            </form>
+        </div>
+
+        <div class="right-container">
+            <img src="src/images/illustration-sign-up-desktop.svg" alt="" class="img-container">
+        </div>
+    </section>
 </body>
 </html>
