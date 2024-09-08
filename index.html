@@ -21,7 +21,7 @@
     <script defer src="/src/js/script.js"></script>
 </head>
 <body>
-    <section class="container">
+    <section id="main-section" class="container">
         <div class="left-container">
             <div class="title-container">
                 <h1 class="title">Stay updated!</h1>
@@ -43,11 +43,12 @@
                 </li>
             </ul>
 
-            <form action="#" method="post" class="form">
-                <p class="title-form">Email address:</p>
-                <input type="email" name="email" placeholder="email@company.com" required>
+            <form action="#" method="post" class="form" id="emailForm">
+                <label for="email" class="title-form ">Email address:</label>
+                <input class="" type="email" id="email" name="email" placeholder="email@company.com" required>
                 <button type="submit" class="btn">Subscribe to monthly newsletter</button>
             </form>
+            <p id="message" class="error disable">Valid email required</p>
         </div>
 
         <div class="right-container">
@@ -55,15 +56,15 @@
         </div>
     </section>
 
-    <section class="container-success success-disable">
+    <section id="success-section" class="container-success disable">
         <div class="success">
             <img class="icon-success" src="/src/images/icon-success.svg" alt="Icone de sucesso">
 
             <h2 class="title-success">Thanks for subscribing!</h2>
-            <p class="description-success">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
+            <p class="description-success">A confirmation email has been sent to <span id="email-value" class="email-value"></span>. 
                     Please open it and click the button inside to confirm your subscription.</p>
 
-            <button class="btn-success">
+            <button id="btn" class="btn-success">
                 <p>Dismiss Message</p>
             </button>
         </div>

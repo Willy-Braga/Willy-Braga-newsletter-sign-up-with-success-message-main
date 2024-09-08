@@ -25,6 +25,7 @@ body{
     gap: 20px;
     padding: 20px;
     font-weight: 700;
+    position: relative;
 }
 
 .title-container{
@@ -67,10 +68,11 @@ body{
 .form .title-form{
     font-size: 13px;
     font-weight: bold;
+    color: var(--secondary-text-colo);
 }
 
 .form input{
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 15px 10px;
     border: 1px solid rgba(0, 0, 0, 0.14);
     border-radius: 8px;
@@ -90,16 +92,33 @@ body{
     background-color: var(--active-color);
 }
 
+.error{
+    color: rgba(255, 0, 0,0.7);
+    font-size: 12px;
+    position: absolute;
+    right: 30px;
+    bottom: 145px;
+}
+
+.error-input{
+    border-color: rgba(247, 35, 35, 0.82) !important;
+    background-color: rgba(255, 87, 87, 0.54);
+}
+
+.disable{
+    display: none !important;
+}
+
+.email-value{
+    font-weight: 700;
+    
+}
 
 .right-container .img-container{
     width: 310px;
 }
 
 /* ----------------------------------------------------------------------- */
-
-.success-disable{
-    display: none !important;
-}
 
 .container-success{
     display: flex;
