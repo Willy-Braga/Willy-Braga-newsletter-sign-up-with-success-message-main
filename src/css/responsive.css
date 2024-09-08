@@ -52,4 +52,8 @@
     .list-item .description {
         font-size: 13px;
     }
+
+    .error{
+        bottom: 125px;
+    }
 }
